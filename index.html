@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MACUP Ambalaj - İletişim Bilgileri</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        body {
+            /* Premium kurumsal his için derin antrasit degrade arka plan */
+            background: linear-gradient(135deg, #0d0d0d 0%, #161616 100%);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 30px 20px;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Orijinal Logolarınız İçin Görsel Alanları */
+        .main-logo-container {
+            width: 100%;
+            max-width: 280px;
+            margin-bottom: 40px;
+        }
+
+        .main-logo-container img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            /* Logonuzun arkası beyazsa transparan yapmak yerine görünür kılmak için hafif bir gölge */
+            filter: drop-shadow(0px 4px 20px rgba(0,0,0,0.6));
+        }
+
+        .title {
+            font-size: 22px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin-bottom: 35px;
+            color: #ffffff;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+
+        /* İletişim Kartı Yapısı */
+        .info-card {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            border-radius: 20px;
+            padding: 35px 25px;
+            margin-bottom: 50px;
+            backdrop-filter: blur(10px); /* Modern cam efekti */
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+        }
+
+        .info-item {
+            margin-bottom: 30px;
+        }
+
+        .info-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-label {
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #d4af37; /* Gerçek Gold/Altın Tonu */
+            margin-bottom: 8px;
+        }
+
+        .info-value {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        /* Butonların ve Linklerin Stil Ayarları */
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: inline-block;
+        }
+
+        /* Linklerin üzerine gelindiğinde/dokunulduğunda parlaması */
+        a:hover {
+            color: #d4af37;
+            transform: translateY(-2px);
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+        }
+
+        /* Alt Kuruluş (Footer) Alanı */
+        .footer {
+            width: 100%;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sub-logo-container {
+            width: 100%;
+            max-width: 140px;
+            margin-bottom: 15px;
+        }
+
+        .sub-logo-container img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .footer-text {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 6px;
+            color: #ffffff;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        
+        <!-- Üst Kısım: MACUP Orijinal Logo -->
+        <div class="main-logo-container">
+            <!-- Logonuzun dosya ismini aşağıya yazacaksınız -->
+            <img src="maccup-logo.png" alt="MACUP Ambalaj Logo">
+        </div>
+
+        <h1 class="title">İletişim Bilgileri</h1>
+
+        <!-- Bilgi Kartı -->
+        <div class="info-card">
+            
+            <!-- Adres -->
+            <div class="info-item">
+                <div class="info-label">Adres</div>
+                <div class="info-value">
+                    <a href="https://maps.google.com/?q=Haydarbey+Mah.+Yeni+Sanayi+4.+Sk.+No:3/E+Erciş+Van" target="_blank" rel="noopener">
+                        HAYDARBEY MAH. YENİ SANAYİ 4 SK.<br>
+                        NO:3/E ERCİŞ / VAN
+                    </a>
+                </div>
+            </div>
+
+            <!-- Telefon -->
+            <div class="info-item">
+                <div class="info-label">Telefon</div>
+                <div class="info-value">
+                    <a href="tel:+905442170860">+90 544 217 08 60</a>
+                </div>
+            </div>
+
+            <!-- E-Posta -->
+            <div class="info-item">
+                <div class="info-label">E-Posta</div>
+                <div class="info-value">
+                    <a href="mailto:info@maccupambalaj.com">info@maccupambalaj.com</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Alt Kısım: ALFA Orijinal Logo ve Yazı -->
+        <div class="footer">
+            <div class="sub-logo-container">
+                <!-- ALFA logosunun dosya ismini aşağıya yazacaksınız -->
+                <img src="alfa-logo.png" alt="ALFA Logo">
+            </div>
+            <div class="footer-text">Kuruluşudur</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
